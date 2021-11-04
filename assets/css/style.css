@@ -1,0 +1,814 @@
+/*==============================*/
+/*						GENERAL						*/
+/*==============================*/
+@import url('https://fonts.googleapis.com/css2?family=Cairo&display=swap');
+
+* {
+	font-family: 'Cairo', sans-serif;
+}
+
+::-webkit-scrollbar {
+	width: 6px;
+}
+
+::-webkit-scrollbar-thumb {
+	background: lightcoral;
+}
+
+::-webkit-scrollbar-track {
+	background: #212529;
+}
+
+::selection {
+	background: transparent;
+	color: lightcoral;
+}
+
+a {
+	text-decoration: none;
+	color: lightcoral;
+}
+
+a.active {
+	color: black !important;
+}
+
+a:hover {
+	color: #212529;
+}
+
+.logocolor {
+	color: lightcoral;
+}
+
+
+/*==============================*/
+/*				NAVIGACTION BAR				*/
+/*==============================*/
+.navbar {
+	margin-top: 1rem;
+	transition: .5s all ease-in-out;
+}
+
+.navbar-brand img {
+	width: 4.5rem;
+	transition: .5s all ease-in-out;
+}
+
+.navbar-brand span {
+	font-size: 3rem;
+	margin-left: .5rem;
+	color: lightcoral;
+	transition: .5s all ease-in-out;
+}
+
+.navbar-brand span span {
+	color: #212529;
+}
+
+.nav-link {
+	font-weight: bold;
+}
+
+.nav-link.active {
+	color: lightcoral !important;
+}
+
+.navbarScroll {
+	background: white;
+	margin-top: 0;
+	box-shadow: 0 0 10px #212529;
+	font-size: large !important;
+}
+
+.navbarScroll .navbar-brand span {
+	font-size: 2.5rem;
+}
+
+.navbarScroll .navbar-brand img {
+	width: 4rem;
+}
+
+.navbar .dropdown-toggle::after {
+	display: none;
+}
+
+.dropdown-item:focus {
+	background: #212529 !important;
+}
+
+.dropdown-item.active {
+	background: lightcoral !important;
+}
+
+/*==============================*/
+/*				 HERO SECTION					*/
+/*==============================*/
+.hero .carousel-inner {
+	height: 100%;
+}
+
+.hero .carousel-inner img {
+	width: 100%;
+	height: 100%;
+	object-fit: cover;
+}
+
+.hero .carousel-caption h1 {
+	font-size: 4rem;
+	font-weight: 500;
+}
+
+.hero .carousel-caption p {
+	font-size: x-large;
+	font-weight: 500;
+}
+
+.hero-container img {
+	width: 100%;
+	height: 100%;
+	object-fit: cover;
+	filter: blur(.1px) opacity(80%);
+}
+
+.hero-container h1 {
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%, -50%);
+	font-size: 5rem;
+}
+
+/*==============================*/
+/*			  HOME/INDEX PAGE			  */
+/*==============================*/
+.home {
+	margin: 5rem auto;
+}
+
+.home .intro p {
+	font-size: larger;
+	letter-spacing: 1px;
+	text-align: justify;
+	line-height: 2.5rem;
+}
+
+.home .intro p span {
+	display: block;
+	padding-top: 2rem;
+	font-size: xx-large;
+	text-align: center;
+}
+
+.home .offer {
+	margin: 5rem auto;
+	text-align: center;
+}
+
+.home .offer h1 {
+	margin-bottom: 2rem;
+}
+
+.home .offer .card {
+	text-align: center;
+}
+
+.home .offer .card-img-overlay {
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	color: #fff;
+	text-shadow: 0 2px 10px #111;
+}
+
+.featured {
+	background: #000000;
+	/* fallback for old browsers */
+	background: -webkit-linear-gradient(to right, #111, #000000);
+	/* Chrome 10-25, Safari 5.1-6 */
+	background: linear-gradient(to right, #111, #000000);
+	/* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+	color: #fff;
+	box-shadow: 0 0 10px #111;
+	padding: 5rem 0;
+	text-align: center;
+}
+
+.featured span {
+	font-size: 5rem;
+}
+
+.featured .col-lg-6 {
+	align-self: center;
+}
+
+.featured img {
+	width: 100%;
+	display: flex;
+}
+
+.featured a {
+	font-size: x-large;
+	margin-top: 2rem;
+	padding: 1rem 2rem;
+}
+
+.featured a:hover {
+	background: lightcoral;
+	color: black;
+}
+
+.gallery-demo {
+	background: url(../../images/home/gallery-demo.jpg) center center;
+	background-size: cover;
+	padding: 20rem 0;
+	text-align: center;
+}
+
+.gallery-demo a {
+	color: #fff;
+	border: 1px solid #fff;
+	border-radius: 5px;
+	padding: .5rem 2rem;
+}
+
+.gallery-demo a:hover {
+	background: #fff;
+	color: lightcoral;
+}
+
+.home-footer {
+	background: #111;
+	padding: 5rem 0;
+	text-align: center;
+	letter-spacing: 1px;
+	color: #bebebe;
+}
+
+.home-footer h1 {
+	font-size: 5rem;
+}
+
+/*==============================*/
+/*						GALLERY						*/
+/*==============================*/
+.gallery h1 {
+	text-align: center;
+	color: lightcoral;
+	padding-top: 5rem;
+	padding-bottom: 2rem;
+}
+
+.gallery .btn-close {
+	position: absolute;
+	font-size: xx-large;
+	top: 15px;
+	right: 15px;
+	z-index: 99999;
+}
+
+.gallery .btn-close:focus {
+	box-shadow: none !important;
+}
+
+.gallery .gallery-img-box {
+	cursor: pointer;
+	overflow: hidden;
+	height: 300px;
+}
+
+.gallery .gallery-img-box img {
+	transition: .3s all ease-in-out;
+	width: 100%;
+	height: 100%;
+	object-fit: cover;
+}
+
+.gallery .gallery-img-box:hover img {
+	transform: scale(1.1);
+}
+
+.gallery .carousel-item:hover img {
+	filter: blur(3px);
+}
+
+.gallery .carousel-caption {
+	visibility: hidden;
+	color: #000000;
+	bottom: 0;
+}
+
+.gallery .carousel-item:hover .carousel-caption {
+	visibility: visible;
+}
+
+/*==============================*/
+/*			 	PRODUCTS PAGE				  */
+/*==============================*/
+
+.products {
+	margin: 5rem auto;
+}
+
+.products .intro h1 {
+	text-align: center;
+	margin-bottom: 5rem;
+}
+
+.products .intro .row h2 {
+	text-align: center;
+	margin-bottom: 2rem;
+}
+
+.products .intro .row p {
+	margin-bottom: 2rem;
+	text-align: justify;
+}
+
+.products .intro img {
+	width: 100%;
+}
+
+.products .intro .btn {
+	padding: 1rem 2rem;
+	background: none;
+	color: lightcoral;
+	border: 1px solid lightcoral;
+}
+
+.products .brands {
+	margin: 5rem auto;
+	text-align: center;
+}
+
+.products .brands img {
+	width: 40%;
+}
+
+.products-nav {
+	top: 10rem;
+	position: sticky;
+}
+
+.list-group-item {
+	background: #212529;
+	color: #fff;
+}
+
+.list-group-item.active {
+	background: lightcoral;
+	border-color: rgba(0, 0, 0, .125);
+}
+
+.list-group-item:hover {
+	background-color: #fff;
+}
+
+.products-list .card .img-box {
+	overflow: hidden;
+}
+
+.products-list .card .img-box img {
+	transition: .3s all ease-out;
+}
+
+.products-list img:hover {
+	transform: scale(1.5);
+}
+
+.products-list .card .price {
+	color: #6c757d;
+	font-size: large;
+}
+
+.products-list .card .price b {
+	color: #FF6E6E;
+}
+
+.products .btn {
+	border: none;
+	background: #212529;
+	color: #fff;
+	box-shadow: none;
+}
+
+.products .btn:hover {
+	background-color: lightcoral;
+	color: #111;
+}
+
+.products .tutorialBox {
+	margin-top: 5rem;
+}
+
+.products .tutorialBox h2 {
+	text-align: center;
+	margin-bottom: 3rem;
+	padding: 1rem 0;
+	letter-spacing: 5px;
+	color: lightcoral;
+	font-weight: bolder;
+	background-color: #111;
+	border-radius: 5px;
+}
+
+.tutorialBox div {
+	align-self: center;
+}
+
+.products-footer {
+	background: lightcoral;
+	padding: 5rem 0;
+	text-align: center;
+	letter-spacing: 1px;
+}
+
+.products-footer h3,
+.products-footer h4 {
+	letter-spacing: 3px;
+	padding-bottom: 1rem;
+}
+
+/*==============================*/
+/*			 	TREATMENTS PAGE			  */
+/*==============================*/
+.treatments-header {
+	margin: 5rem auto;
+}
+
+.treatments-header ul li a {
+	font-size: x-large;
+}
+
+#hairloss,
+#hairgraying {
+	margin: 5rem auto;
+	text-align: justify;
+}
+
+#hairloss .btn,
+#hairgraying .btn {
+	border: none;
+	font-size: x-large;
+}
+
+#hairloss .btn:hover,
+#hairgraying .btn:hover {
+	background: lightcoral;
+}
+
+#hairloss p,
+#hairgraying p {
+	font-size: larger;
+	padding-top: 1rem;
+	word-spacing: 1px;
+	letter-spacing: .5px;
+}
+
+#hairloss li,
+#hairgraying li {
+	font-size: large;
+}
+
+#hairgraying .card {
+	text-align: center;
+}
+
+#hairgraying .card-body {
+	text-align: justify;
+	height: 200px;
+	overflow: auto;
+}
+
+#hairgraying h5 {
+	margin-top: 3rem;
+}
+
+/*==============================*/
+/*			 	EQUIPMENTS PAGE			  */
+/*==============================*/
+.equipments h1 {
+	text-align: center;
+	letter-spacing: 2px;
+	text-transform: uppercase;
+	padding-bottom: 2rem;
+	border-bottom: 1px solid black;
+}
+
+.equipments h1 span {
+	letter-spacing: 5px;
+	display: block;
+	margin-top: 2rem;
+	font-size: large;
+}
+
+.equipments p {
+	width: 90%;
+	margin: 3rem auto;
+	font-size: x-large;
+	text-align: center;
+}
+
+.equipments p span {
+	text-align: justify;
+	display: block;
+	margin-top: 2rem;
+	text-align-last: center;
+}
+
+.equipments {
+	margin: 5rem auto;
+}
+
+.equipments ul li a {
+	font-size: x-large;
+}
+
+.equipments h2 {
+	text-align: center;
+	margin-top: 5rem;
+	margin-bottom: 3rem;
+	padding: 1rem 0;
+	text-transform: uppercase;
+	letter-spacing: 5px;
+	color: lightcoral;
+	font-weight: bolder;
+	background-color: #111;
+	border-radius: 5px;
+}
+
+.equipments caption {
+	text-align: center;
+}
+
+.equipments table {
+	vertical-align: middle;
+}
+
+.equipments table tr th:nth-child(1),
+.equipments table tr th:nth-child(3),
+.equipments table tr th:nth-child(5),
+.equipments table tr td:nth-child(2),
+.equipments table tr td:nth-child(4),
+.equipments table tr td:nth-child(6) {
+	text-align: center;
+}
+
+.equipments table tbody tr {
+	padding: 2rem auto;
+}
+
+.equipments table img {
+	top: 0;
+	width: 10rem;
+}
+
+.equipments table li {
+	list-style: circle;
+}
+
+.equipments table tbody tr td:nth-child(6) {
+	width: 5rem;
+}
+
+/*==============================*/
+/*			 	 	ABOUT PAGE				  */
+/*==============================*/
+.about {
+	margin: 5rem 0;
+	text-align: justify;
+}
+
+.about .container:first-child h1 {
+	margin-top: 1rem;
+	margin-bottom: 3rem;
+}
+
+.about .about-2 {
+	margin-top: 5rem;
+	background: #21252910;
+}
+
+.about .about-2 p {
+	font-size: large;
+}
+
+.facts {
+	margin-top: 5rem;
+	text-align: center;
+}
+
+.facts h1 {
+	color: lightcoral;
+	font-size: 4rem;
+}
+
+.facts p {
+	font-size: x-large;
+	font-weight: bold;
+	text-transform: uppercase;
+	letter-spacing: 1px;
+}
+
+.about .experts {
+	margin-top: 5rem;
+	text-align: center;
+}
+
+.about .experts h2 {
+	margin-bottom: 2rem;
+}
+
+.about .experts .img-holder {
+	height: 400px;
+}
+
+.about .experts .img-holder img {
+	width: 100%;
+	height: 100%;
+	object-fit: cover;
+}
+
+.about .experts .card .card-text:last-child {
+	padding-top: 1rem;
+}
+
+.about .experts .card a {
+	color: #c7c7c4;
+	padding: 0 .3rem;
+}
+
+.about .experts .card a:hover {
+	color: lightcoral;
+}
+
+.about-3 {
+	background: lightcoral;
+	padding: 5rem 0;
+	text-align: center;
+	letter-spacing: 1px;
+}
+
+.about-3 a {
+	letter-spacing: 3px;
+}
+
+/*==============================*/
+/*			 	 CONTACT PAGE				  */
+/*==============================*/
+.hero-contact img {
+	filter: blur(.1px) opacity(80%);
+}
+
+.contact .container {
+	margin-top: 5rem;
+}
+
+.phone p,
+.location p {
+	margin-top: 2rem;
+	font-size: x-large;
+}
+
+form {
+	margin: 5rem auto;
+}
+
+form .btn {
+	width: 100%;
+	height: 5rem;
+	font-size: x-large;
+	border: none;
+}
+
+form input:focus,
+form textarea:focus {
+	border-color: lightcoral !important;
+	box-shadow: none !important;
+}
+
+form .btn:hover {
+	background: lightcoral;
+	border: none;
+	color: #212529;
+}
+
+
+/*==============================*/
+/*						FOOTER						*/
+/*==============================*/
+.footer {
+	color: #bebebe;
+	font-size: 14px;
+	text-align: center;
+}
+
+.footer img {
+	width: 5rem;
+	margin-bottom: 1rem;
+}
+
+.footer h2 {
+	color: white;
+}
+
+.footer h2 span {
+	color: lightcoral;
+}
+
+.socialMedia {
+	margin: 2rem 0;
+}
+
+.socialMedia a {
+	margin: 0 1rem;
+}
+
+.socialMedia a:hover {
+	color: white;
+}
+
+/*==============================*/
+/*			RESPONSIVE SETTINGS			*/
+/*==============================*/
+@media (max-width:990px) {
+	.navbar {
+		background: white;
+	}
+
+	.navbar-brand img {
+		width: 4rem;
+	}
+
+	.navbar-brand span {
+		font-size: 2.5rem;
+	}
+
+	.navbar-nav {
+		text-align: center;
+	}
+
+	.hero {
+		padding-top: 85px;
+	}
+
+	.hero .carousel-inner {
+		height: auto;
+	}
+
+	.hero .carousel-inner img {
+		height: auto;
+	}
+
+	.hero-container img {
+		width: 100%;
+		height: auto;
+	}
+
+	.hero-container h1 {
+		font-size: 3rem;
+		font-weight: 500;
+		top: 40%;
+	}
+
+	.products .intro .row div {
+		padding: 0 !important;
+	}
+
+	.products .intro .row img:last-child {
+		margin: 1rem auto;
+	}
+
+	.tutorialBox {
+		text-align: center;
+	}
+}
+
+@media (max-width: 768px) {
+	.hero .carousel-caption h1 {
+		font-size: 2rem;
+	}
+
+	.hero .carousel-caption p {
+		font-size: medium;
+	}
+
+	.gallery .gallery-img-box {
+		height: 200px;
+	}
+}
+
+@media (max-width: 425px) {
+	.navbar-brand {
+		text-align: center;
+	}
+
+	.navbar-brand span:nth-child(2) {
+		display: block;
+		text-align: right;
+	}
+
+	.hero {
+		padding-top: 155px;
+	}
+}
